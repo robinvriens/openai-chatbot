@@ -1,0 +1,19 @@
+{
+  "Personas": [
+    {
+      "name": "Steve Jobs",
+      "active": true,
+      "key": "stevejobs"
+    },
+    {
+      "name": "Chandler Bing",
+      "active": false,
+      "key": "chandlerbing"
+    },
+    {
+      "name": "FR|ESP Translator",
+      "active": false,
+      "key": "fr-esp-translator"
+    }
+  ]
+}

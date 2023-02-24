@@ -8,12 +8,13 @@ const SendIcon = props => (
   </svg>
 );
 
-export default function Form({ setMessages }) {
+export default function Form({ setMessages,persona }) {
   const [message, setMessage] = useState('');
 
   const messageResponse = async () => {
     const { data } = await axios.post('http://localhost:4000/message', {
-      message
+      message,
+      persona
     });
 
     setMessages(prev => [

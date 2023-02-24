@@ -12,10 +12,12 @@ const Logo = props => {
 export default function Head() {
   return (
     <div className="flex items-center">
-      <div className="bg-[#10A37F] flex items-center justify-center p-4 rounded-2xl">
-        <Logo className="w-8 h-8" />
+      <div className="bg-[#030303] flex items-center justify-center p-1 rounded-2xl">
+        <Logo className="w-20 h-20" />
       </div>
-      <span className="text-white ml-4 text-lg">Chatbot</span>
+      <span className="text-white ml-4 text-lg">My Chatbot</span>
     </div>
   );
 }
+
+

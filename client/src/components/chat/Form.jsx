@@ -1,6 +1,8 @@
 import axios from 'axios';
 import { formatRelative } from 'date-fns';
 import { useState } from 'react';
+import AppConfig from '../../../public/configs/app-config.json';
+
 
 const SendIcon = props => (
   <svg viewBox="0 0 24 24" {...props}>
@@ -8,11 +10,11 @@ const SendIcon = props => (
   </svg>
 );
 
-export default function Form({ setMessages,persona }) {
+export default function Form({ setMessages, persona }) {
   const [message, setMessage] = useState('');
-
+  const API_PATH = AppConfig.CHAT_MODE ? AppConfig.CHAT_ENDPOINT : AppConfig.COMPLETION_ENDPOINT;
   const messageResponse = async () => {
-    const { data } = await axios.post('http://localhost:4000/message', {
+    const { data } = await axios.post(`${AppConfig.API_ROOT_URL}${API_PATH}`, {
       message,
       persona
     });

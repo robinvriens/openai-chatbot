@@ -1,0 +1,6 @@
+{
+  "API_ROOT_URL": "http://localhost:4000",
+  "CHAT_MODE": true,
+  "COMPLETION_ENDPOINT": "/message",
+  "CHAT_ENDPOINT": "/chat"
+}
